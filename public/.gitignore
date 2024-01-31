@@ -1,3 +1,8 @@
+### Format1  ###
+node_modules/
+node/
+public/
+
 # Logs
 logs
 *.log
