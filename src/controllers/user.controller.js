@@ -1,10 +1,12 @@
-import { asyncHandler } from "../utils/asyncHandler.js"
-import {ApiError} from "../utils/ApiError.js"
-import {User} from "../models/user.model.js"
-import {uploadOnCloudinary} from "../utils/cloudinary.js"
-import { ApiResponse } from "../utils/ApiResponse.js"
+import { asyncHandler } from "../utils/asyncHandler.js";
+import {ApiError} from "../utils/ApiError.js";
+import {User} from "../models/user.model.js";
+import {uploadOnCloudinary} from "../utils/cloudinary.js";
+import { ApiResponse } from "../utils/ApiResponse.js";
 
 const registerUser = asyncHandler( async (req, res) => {
+    
+        
         // get user details from frontend
         // validation - not empty
         // check if user already exists: username, email
@@ -76,7 +78,7 @@ const registerUser = asyncHandler( async (req, res) => {
             new ApiResponse(200, createdUser, "User registered Successfully")
         )
     
-    } )
+})  
 
 export {
         registerUser,
